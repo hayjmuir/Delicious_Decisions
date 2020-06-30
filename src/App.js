@@ -1,67 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import 'whatwg-fetch';
+import React, { useState } from "react";
+import { Navbar } from "./Navbar/Navbar";
+import { Banner } from "./Banner/Banner";
+import { Menu } from "./Menu/Menu";
+import { FoodDialog } from "./FoodDialog/FoodDialog";
+import { GlobalStyle } from "./Styles/GlobalStyle";
+import { Order } from "./Order/Order";
+import { useOpenFood } from "./Hooks/useOpenFood";
+import { useOrders } from "./Hooks/useOrders";
+import { useTitle } from "./Hooks/useTitle";
 
-import { getLocations } from './services';
+function App() {
+  const openFood = useOpenFood();
+  const orders = useOrders();
+  useTitle({ ...openFood, ...orders });
 
-
-class App extends Component {
-  state = {
-    coords: null
-  };
-
-  getMyLocation = () => {
-    window.navigator.geolocation
-    ? this.getLocationData()
-    : this.locationNotAvailable()
-  }
-  
-  getLocationData = (data) => {
-    !data
-      ? window.navigator.geolocation.getCurrentPosition(this.getLocationData)
-      : this.setState({ coords: data.coords })
-  }
-  
-  locationNotAvailable = () => {
-    alert('Location services not available.');
-  }
-
-  fetchFood = (e) => {
-    e.preventDefault();
-    const { latitude, longitude } = this.state.coords;
-    getLocations(latitude, longitude, this.showLocations);
-  }
-
-  showLocations = (locations) => {
-    console.log(locations);
-  }
-
-  hasLocation = () =>
-    this.state.coords !== null;
-
-  render() {
-    return (
-      <div className="App">
-        {
-          this.hasLocation()
-          ? this.foodForm()
-          : this.getLocationButton()
-        }
-      </div>
-    );
-  }
-
-  getLocationButton = () =>
-    <button onClick={this.getMyLocation}>
-      Get my location
-    </button>
-
-  foodForm = () =>
-    <form onSubmit={this.fetchFood}>
-      Distance: <input name="distance"  />
-      <button>Find my food!</button>
-    </form>
+  return (
+    <>
+      <GlobalStyle />
+      <FoodDialog {...openFood} {...orders} />
+      <Navbar />
+      <Order {...orders} {...openFood} />
+      <Banner />
+      <Menu {...openFood} />
+    </>
+  );
 }
 
 export default App;
+
+//  © created by react.school
