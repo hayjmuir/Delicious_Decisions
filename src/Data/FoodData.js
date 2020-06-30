@@ -7,53 +7,53 @@ export function formatPrice(price) {
 
 export const foodItems = [
   {
-    name: "Cheese Pizza",
+    name: "Meals",
     img: "/img/pizza.png",
     section: "Panda Express",
     price: 1
   },
   {
-    name: "Pepperoni Pizza",
+    name: "Meals",
     img: "/img/pizza2.jpeg",
     section: "Qdoba",
-    price: 1.5
+    price: 1
   },
   {
-    name: "Chicken Pizza",
+    name: "Meals",
     img: "/img/chicken-pizza.jpeg",
     section: "Burger King",
-    price: 2
+    price: 1
   },
   {
     img: "/img/healthy-pizza.jpeg",
-    name: "Veggie Pizza",
+    name: "Meals",
     section: "Jimmy Johns",
-    price: 2
+    price: 1
   },
   {
     img: "/img/burger.jpeg",
-    name: "Burger",
+    name: "Meals",
     section: "NYPD Pizza",
-    price: 3
+    price: 1
   },
-  { img: "/img/gyro.jpeg", name: "Gyro", section: "Salad 'n' Go", price: 4.5 },
+  { img: "/img/gyro.jpeg", name: "Meals", section: "Salad 'n' Go", price: 4.5 },
   {
     img: "/img/sandwich.jpeg",
-    name: "Shrimp PoBoy",
+    name: "Meals",
     section: "Pete's Fish and Chips",
-    price: 6
+    price: 1
   },
   {
     img: "/img/fries.jpeg",
-    name: "Fries",
+    name: "Meals",
     section: "Filibertos",
     price: 1
   },
   {
     price: 1,
-    name: "Soda",
+    name: "Drinks/Coffee",
     section: "Dunkin Donuts",
-    choices: ["Coke", "Sprite", "Root Beer"]
+    choices: ["Coffee", "Iced Coffee", "Bottled Drink"]
   }
 ];
 
@@ -65,4 +65,4 @@ export const foods = foodItems.reduce((res, food) => {
   return res;
 }, {});
 
-//  © created by react.school
+
