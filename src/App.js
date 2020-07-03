@@ -8,6 +8,8 @@ import { Order } from "./Order/Order";
 import { useOpenFood } from "./Hooks/useOpenFood";
 import { useOrders } from "./Hooks/useOrders";
 import { useTitle } from "./Hooks/useTitle";
+import Wheel from "./Wheel.js";
+
 
 function App() {
   const openFood = useOpenFood();
@@ -22,6 +24,8 @@ function App() {
       <Order {...orders} {...openFood} />
       <Banner />
       <Menu {...openFood} />
+      <Wheel />
+      
     </>
   );
 }

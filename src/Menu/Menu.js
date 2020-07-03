@@ -11,7 +11,8 @@ const MenuStyled = styled.div`
 
 export function Menu({ setOpenFood }) {
   return (
-    <MenuStyled>
+    // <MenuStyled>
+    <>
       {Object.entries(foods).map(([sectionName, foods]) => (
         <>
           <h1> {sectionName} </h1>
@@ -32,6 +33,7 @@ export function Menu({ setOpenFood }) {
           </FoodGrid>
         </>
       ))}
-    </MenuStyled>
+      </>
+    // </MenuStyled>
   );
 }
