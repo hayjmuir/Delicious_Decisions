@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
  
-import {WheelComponent} from 'react-wheel-of-prizes'
-import 'react-wheel-of-prizes/dist/index.css'
-import {foodItems} from "./Data/FoodData.js"
+import {WheelComponent} from "./index"
+// import 'react-wheel-of-prizes/dist/index.css'
+import {foodItems} from "../Data/FoodData.js"
  
 const Wheel = () => {
   const segments = foodItems.map(e=>e.section)
@@ -15,6 +15,9 @@ const Wheel = () => {
     "#F9AA1F",
     "#EC3F3F",
     "#FF9000",
+    "#3DA5E0",
+    "#34A24F",
+    
   ];
   const onFinished = (winner) => {
     console.log(winner);

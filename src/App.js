@@ -8,7 +8,7 @@ import { Order } from "./Order/Order";
 import { useOpenFood } from "./Hooks/useOpenFood";
 import { useOrders } from "./Hooks/useOrders";
 import { useTitle } from "./Hooks/useTitle";
-import Wheel from "./Wheel.js";
+import Wheel from "./Wheel/Wheel.js";
 
 
 function App() {
