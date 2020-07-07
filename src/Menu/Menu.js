@@ -17,9 +17,13 @@ export function Menu({ setOpenFood }) {
         <>
           <h1> {sectionName} </h1>
           <FoodGrid>
-            {foods.map(food => (
+            {foods.map(food => {
+              console.log(food);
+            return(
+
+        
               <Food
-                img={food.img}
+                value={food.img}
                 onClick={() => {
                   setOpenFood(food);
                 }}
@@ -29,7 +33,8 @@ export function Menu({ setOpenFood }) {
                   <div>{formatPrice(food.price)}</div>
                 </FoodLabel>
               </Food>
-            ))}
+            )}
+            )}
           </FoodGrid>
         </>
       ))}
