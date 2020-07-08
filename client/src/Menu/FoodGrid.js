@@ -1,4 +1,4 @@
-import img from "../img/panda.jpg"
+// import img from "../img/panda.jpg"
 import styled from "styled-components";
 import { Title } from "../Styles/title";
 

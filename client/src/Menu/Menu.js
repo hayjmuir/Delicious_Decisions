@@ -23,7 +23,7 @@ export function Menu({ setOpenFood }) {
 
         
               <Food
-                value={food.img}
+                value={foods.img}
                 onClick={() => {
                   setOpenFood(food);
                 }}
