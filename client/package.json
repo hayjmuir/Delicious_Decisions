@@ -2,7 +2,7 @@
   "name": "sliceline",
   "version": "0.1.0",
   "private": true,
-  "proxy":"http://localhost:3001",
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "prettier": "^1.17.0",
     "react": "^16.8.6",

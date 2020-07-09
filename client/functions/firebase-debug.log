@@ -1,0 +1,82 @@
+[debug] [2020-07-09T16:44:55.277Z] ----------------------------------------------------------------------
+[debug] [2020-07-09T16:44:55.279Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2020-07-09T16:44:55.279Z] CLI Version:   8.4.3
+[debug] [2020-07-09T16:44:55.279Z] Platform:      darwin
+[debug] [2020-07-09T16:44:55.280Z] Node Version:  v12.14.1
+[debug] [2020-07-09T16:44:55.280Z] Time:          Thu Jul 09 2020 09:44:55 GMT-0700 (Mountain Standard Time)
+[debug] [2020-07-09T16:44:55.281Z] ----------------------------------------------------------------------
+[debug] [2020-07-09T16:44:55.281Z] 
+[debug] [2020-07-09T16:44:55.296Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-09T16:44:55.297Z] > authorizing via signed-in user
+[debug] [2020-07-09T16:44:55.297Z] [iam] checking project delicious-decisions for permissions ["firebase.projects.get"]
+[debug] [2020-07-09T16:44:55.298Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-07-09T16:44:55.299Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-07-09T16:44:55.496Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 09 Jul 2020 16:44:55 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-09T16:44:55.522Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/delicious-decisions:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-07-09T16:44:55.883Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 09 Jul 2020 16:44:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=186","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"12\""}}
+[debug] [2020-07-09T16:44:55.903Z] [functions] Watching "/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions" for Cloud Functions...
+[debug] [2020-07-09T16:44:55.912Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-07-09T16:44:55.912Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-07-09T16:44:55.912Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-07-09T16:44:55.913Z] DEBUG: [worker-~diagnostic~-5cb1b32a-acc6-492e-a473-fa0181360249]: Assigning socketPath: /var/folders/_3/lmgzc4dn37d0f8d47c28f33w0000gp/T/fire_emu_35342.sock
+[debug] [2020-07-09T16:44:55.913Z] DEBUG: [worker-~diagnostic~-5cb1b32a-acc6-492e-a473-fa0181360249]: BUSY
+[debug] [2020-07-09T16:44:56.286Z] DEBUG: [runtime-status] [35342] Functions runtime initialized. {"cwd":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions","node_version":"12.14.1"}
+[debug] [2020-07-09T16:44:56.286Z] DEBUG: [runtime-status] [35342] Disabled runtime features: undefined
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Functions emulator requires the module \"firebase-admin\" to be installed. This package is in your package.json, but it's not available. You probably need to run \"npm install\" in your functions directory."}}
+[debug] [2020-07-09T16:44:56.289Z] [functions] Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2020-07-09T16:44:56.306Z] DEBUG: [worker-~diagnostic~-5cb1b32a-acc6-492e-a473-fa0181360249]: exited
+[debug] [2020-07-09T16:44:56.306Z] DEBUG: [worker-~diagnostic~-5cb1b32a-acc6-492e-a473-fa0181360249]: FINISHED
+[debug] [2020-07-09T16:52:28.149Z] ----------------------------------------------------------------------
+[debug] [2020-07-09T16:52:28.151Z] Command:       /usr/local/bin/node /usr/local/bin/firebase functions:shell
+[debug] [2020-07-09T16:52:28.152Z] CLI Version:   8.4.3
+[debug] [2020-07-09T16:52:28.152Z] Platform:      darwin
+[debug] [2020-07-09T16:52:28.152Z] Node Version:  v12.14.1
+[debug] [2020-07-09T16:52:28.153Z] Time:          Thu Jul 09 2020 09:52:28 GMT-0700 (Mountain Standard Time)
+[debug] [2020-07-09T16:52:28.153Z] ----------------------------------------------------------------------
+[debug] [2020-07-09T16:52:28.153Z] 
+[debug] [2020-07-09T16:52:28.167Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-09T16:52:28.168Z] > authorizing via signed-in user
+[debug] [2020-07-09T16:52:28.168Z] [iam] checking project delicious-decisions for permissions ["firebase.projects.get"]
+[debug] [2020-07-09T16:52:28.171Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/delicious-decisions:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-07-09T16:52:28.549Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 09 Jul 2020 16:52:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=197","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"8\" doesn't match your global version \"12\""}}
+[debug] [2020-07-09T16:52:28.577Z] [functions] Watching "/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions" for Cloud Functions...
+[debug] [2020-07-09T16:52:28.589Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-07-09T16:52:28.589Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-07-09T16:52:28.590Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2020-07-09T16:52:28.590Z] DEBUG: [worker-~diagnostic~-10af63ac-11f5-4c7a-830d-62c3f11bce76]: Assigning socketPath: /var/folders/_3/lmgzc4dn37d0f8d47c28f33w0000gp/T/fire_emu_35802.sock
+[debug] [2020-07-09T16:52:28.590Z] DEBUG: [worker-~diagnostic~-10af63ac-11f5-4c7a-830d-62c3f11bce76]: BUSY
+[debug] [2020-07-09T16:52:28.921Z] DEBUG: [runtime-status] [35802] Functions runtime initialized. {"cwd":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions","node_version":"12.14.1"}
+[debug] [2020-07-09T16:52:28.924Z] DEBUG: [runtime-status] [35802] Disabled runtime features: undefined
+[debug] [2020-07-09T16:52:28.925Z] DEBUG: [runtime-status] [35802] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-07-09T16:52:28.927Z] DEBUG: [runtime-status] [35802] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-09T16:52:28.927Z] DEBUG: [runtime-status] [35802] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2020-07-09T16:52:28.930Z] DEBUG: [runtime-status] [35802] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-09T16:52:28.971Z] DEBUG: [runtime-status] [35802] Checked functions.config() {"config":{}}
+[debug] [2020-07-09T16:52:28.971Z] DEBUG: [runtime-status] [35802] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/node_modules/firebase-functions/lib/index.js"}}
+[debug] [2020-07-09T16:52:28.971Z] DEBUG: [runtime-status] [35802] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-09T16:52:28.973Z] DEBUG: [runtime-status] [35802] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-07-09T16:52:28.973Z] DEBUG: [runtime-status] [35802] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.7.0","resolution":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-07-09T16:52:28.974Z] DEBUG: [runtime-status] [35802] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.13.0","resolution":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/node_modules/firebase-admin/lib/index.js"}}
+[warn] ⚠  /Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/index.js:3
+const functions = require('firebase-functions');
+      ^
+
+SyntaxError: Identifier 'functions' has already been declared
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:664:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5) {"metadata":{"emulator":{"name":"functions"},"message":"/Users/bobbyespinoza/Documents/U-of-A-Bootcamp/Delicious_Decisions/client/functions/index.js:3\nconst functions = require('firebase-functions');\n      ^\n\nSyntaxError: Identifier 'functions' has already been declared\n    at Module._compile (internal/modules/cjs/loader.js:891:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)\n    at Module.load (internal/modules/cjs/loader.js:811:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:723:14)\n    at Module.require (internal/modules/cjs/loader.js:848:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:664:33\n    at Generator.next (<anonymous>)\n    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)"}}
+[warn] ⚠  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2020-07-09T16:52:28.998Z] DEBUG: [worker-~diagnostic~-10af63ac-11f5-4c7a-830d-62c3f11bce76]: exited
+[debug] [2020-07-09T16:52:28.998Z] DEBUG: [worker-~diagnostic~-10af63ac-11f5-4c7a-830d-62c3f11bce76]: FINISHED
