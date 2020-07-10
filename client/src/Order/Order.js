@@ -7,6 +7,7 @@ import {
 } from "../FoodDialog/FoodDialog";
 import { formatPrice } from "../Data/FoodData";
 import { getPrice } from "../FoodDialog/FoodDialog";
+import axios from "axios";
 
 const OrderStyled = styled.div`
   position: fixed;
@@ -67,6 +68,14 @@ export function Order({ orders, setOrders, setOpenFood }) {
     setOrders(newOrders);
   };
 
+  const checkout = ()=>{
+    console.log("checking out")
+    const orderData={orders, total}
+    console.log("order data",orderData);
+    axios.post("/api/order", orderData).then(()=>console.log("order complete"))
+  
+  }
+
   return (
     <OrderStyled>
       {orders.length === 0 ? (
@@ -124,7 +133,8 @@ export function Order({ orders, setOrders, setOpenFood }) {
         </OrderContent>
       )}
       <DialogFooter>
-        <ConfirmButton>Checkout</ConfirmButton>
+        <ConfirmButton onClick={checkout}
+          disabled={false}>Checkout</ConfirmButton>
       </DialogFooter>
     </OrderStyled>
   );

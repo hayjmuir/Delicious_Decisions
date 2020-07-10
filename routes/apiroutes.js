@@ -1,8 +1,7 @@
 var db = require("../models")
-const { get } = require("http")
-function apiroutes(app) {
+var router =require("express").Router()
 
-    app.get("/api/restaurant", function (req, res) {
+    router.get("/api/restaurant", function (req, res) {
         db.Restaurant.find().then(function (results) {
             res.json(results)
         })
@@ -10,25 +9,30 @@ function apiroutes(app) {
 
     })
 
-    app.post("/api/restaurant", function (req, res) {
+    router.post("/api/restaurant", function (req, res) {
         db.Restaurant.create(req.body).then(function (results) {
             res.json(results)
         })
     })
 
-    app.put("/api/restuarant/:id", function (req, res) {
+    router.put("/api/restaurant/:id", function (req, res) {
         db.Restaurant.update({ _id: req.params.id }).then(function (results) {
             res.json(results)
         })
     })
-    app.delete("/api/restaurant/:id", function (req, res) {
+    router.delete("/api/restaurant/:id", function (req, res) {
         db.Restaurant.remove({ _id: req.params.id }).then(function (results) {
             res.json(results)
         })
 
     })
 
+    router.post("/api/order", function (req, res) {
+        var order=req.body
+        console.log("this is the order", order)
+        res.end()
+    })
 
-}
 
-module.exports = apiroutes
+
+module.exports = router

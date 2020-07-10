@@ -6,7 +6,7 @@ var routes = require("./routes/apiroutes")
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-routes(app)
+app.use(routes)
 
 
 mongoose.connect(process.env.MONGODB_URI||"mongodb://localhost/restauarnts")
