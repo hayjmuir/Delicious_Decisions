@@ -69,8 +69,9 @@ export function Order({ orders, setOrders, setOpenFood }) {
   };
 
   const checkout = ()=>{
-    console.log("checking out")
     const orderData={orders, total}
+    alert(`Thank you for your order! ${orderData.total}`)
+    console.log("checking out")
     console.log("order data",orderData);
     axios.post("/api/order", orderData).then(()=>console.log("order complete"))
   
@@ -133,7 +134,7 @@ export function Order({ orders, setOrders, setOpenFood }) {
         </OrderContent>
       )}
       <DialogFooter>
-        <ConfirmButton onClick={checkout}
+        <ConfirmButton onClick={()=>{checkout()}}
           disabled={false}>Checkout</ConfirmButton>
       </DialogFooter>
     </OrderStyled>
