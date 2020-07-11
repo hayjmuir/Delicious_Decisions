@@ -23,8 +23,9 @@ function App() {
       <Navbar />
       <Order {...orders} {...openFood} />
       <Banner />
-      <Menu {...openFood} />
       <Wheel />
+      <Menu {...openFood} />
+      
       
     </>
   );
