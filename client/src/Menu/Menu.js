@@ -11,7 +11,7 @@ const MenuStyled = styled.div`
 
 export function Menu({ setOpenFood }) {
   return (
-    // <MenuStyled>
+    <MenuStyled>
     <>
       {Object.entries(foods).map(([sectionName, foods]) => (
         <>
@@ -39,6 +39,6 @@ export function Menu({ setOpenFood }) {
         </>
       ))}
       </>
-    // </MenuStyled>
+    </MenuStyled>
   );
 }
