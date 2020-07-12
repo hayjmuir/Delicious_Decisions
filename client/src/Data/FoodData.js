@@ -20,7 +20,9 @@ export const foodItems = [
     name: "Panda Bowl", 
     img: "https://www.tasteofhome.com/wp-content/uploads/2018/11/PX_OrangeChicken_FriedRice_Bowl.jpg",
     section: "Panda Express",
-    price: 7
+    price: 7,
+    choices: ["Orange Chicken", "Teryaki Chicken", "Sweet and Sour Chicken"]
+    
   },
   {
     name: "Egg Rolls",
