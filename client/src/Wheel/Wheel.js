@@ -2,10 +2,12 @@ import React, { Component } from 'react'
  
 import {WheelComponent} from "./index"
 // import 'react-wheel-of-prizes/dist/index.css'
-import {foodItems} from "../Data/FoodData.js"
- 
+import {foodChoice} from "../Data/FoodData.js"
+
+
+
 const Wheel = () => {
-  const segments = foodItems.map(e=>e.section)
+  const segments = foodChoice.map(e=>e.choice)
   const seg_colors = [
     "#EE4040",
     "#F0CF50",
