@@ -18,49 +18,49 @@ export const foodItems = [
   
   {
     name: "Panda Bowl", 
-    img: "https://developinglafayette.com/wp-content/uploads/2020/04/img_7063.jpg",
+    img: "https://www.tasteofhome.com/wp-content/uploads/2018/11/PX_OrangeChicken_FriedRice_Bowl.jpg",
     section: "Panda Express",
     price: 7
   },
   {
     name: "Egg Rolls",
-    img: "https://developinglafayette.com/wp-content/uploads/2020/04/img_7063.jpg",
+    img: "https://www.dinneratthezoo.com/wp-content/uploads/2018/01/homemade-egg-rolls-4-500x500.jpg",
     section: "Panda Express",
     price: 1
   },
   {
-    name: "Won Tons",
-    img: "https://developinglafayette.com/wp-content/uploads/2020/04/img_7063.jpg",
+    name: "Rangoons",
+    img: "https://www.seriouseats.com/recipes/images/20110416-crab-rangoon-pupu-tiki16.jpg",
     section: "Panda Express",
     price: 1
   },
   {
     name: "Drinks",
-    img: "https://developinglafayette.com/wp-content/uploads/2020/04/img_7063.jpg",
+    img: "https://live.staticflickr.com/113/306277190_c1c69e880c_z.jpg",
     section: "Panda Express",
     price: 2
   },
   {
     name: "Burrito",
-    img: "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fguiltyeats.com%2Ffiles%2Fimage-exchange%2F2016%2F04%2Fie_45508.jpeg",
+    img: "https://www.qdobawisconsin.com/sites/default/files/qdoba_burritos.jpg",
     section: "Qdoba",
     price: 9
   },
   {
     name: "Bowl",
-    img: "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fguiltyeats.com%2Ffiles%2Fimage-exchange%2F2016%2F04%2Fie_45508.jpeg",
+    img: "https://vegnews.com/media/W1siZiIsIjE1NzQyL1ZlZ05ld3MuUURPQkFGYWppdGFWZWdhbkJvd2wuanBnIl0sWyJwIiwiY29udmVydCIsIi1jcm9wIDI0MDB4MTQxOSsxMTIrMiArcmVwYWdlIC1yZXNpemUgODAweDQ3M14iLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.QDOBAFajitaVeganBowl.jpg?sha=338c7aeb1fab1d16",
     section: "Qdoba",
     price: 8
   },
   {
     name: "Chips",
-    img: "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fguiltyeats.com%2Ffiles%2Fimage-exchange%2F2016%2F04%2Fie_45508.jpeg",
+    img: "https://m.media-amazon.com/images/G/01/ember/restaurants/austin/QdobaMexicanGrill/QdobaMexicanGrill_Chips_wQueso._V530334236_.jpg",
     section: "Qdoba",
     price: 1
   },
   {
     name: "Drinks",
-    img: "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fguiltyeats.com%2Ffiles%2Fimage-exchange%2F2016%2F04%2Fie_45508.jpeg",
+    img: "https://images.contentful.com/qkbff05k1bjx/23NoZEfAN6QqeoE0IgiqoS/dc8003448d56bf91fa249f66fc14e338/CatDrinks_3x.png",
     section: "Qdoba",
     price: 2
   },
