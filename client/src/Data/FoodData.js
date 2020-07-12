@@ -20,7 +20,9 @@ export const foodItems = [
     name: "Panda Bowl", 
     img: "https://developinglafayette.com/wp-content/uploads/2020/04/img_7063.jpg",
     section: "Panda Express",
-    price: 7
+    price: 7,
+    choices: ["Orange Chicken", "Teryaki Chicken", "Sweet and Sour Chicken"]
+    
   },
   {
     name: "Egg Rolls",
