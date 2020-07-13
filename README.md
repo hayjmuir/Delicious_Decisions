@@ -22,11 +22,11 @@ Finding Food Faster
   
 ### Images 
 
-[Wheel](https://github.com/hayjmuir/Delicious_Decisions/blob/master/images/wheel60.gif)
+![Wheel](https://github.com/hayjmuir/Delicious_Decisions/blob/master/images/wheel60.gif)
 
-[BKDD](https://github.com/hayjmuir/Delicious_Decisions/blob/master/images/BKDD.jpg)
+![BKDD](https://github.com/hayjmuir/Delicious_Decisions/blob/master/images/BKDD.jpg)
 
-[WheelDD](https://github.com/hayjmuir/Delicious_Decisions/blob/master/images/WHeel%20DD.jpg)
+![WheelDD](https://github.com/hayjmuir/Delicious_Decisions/blob/master/images/WHeel%20DD.jpg)
 
 
 
