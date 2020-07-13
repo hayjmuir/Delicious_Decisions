@@ -19,20 +19,29 @@ export function Menu({ setOpenFood }) {
           <FoodGrid>
             {foods.map(food => {
               console.log(food);
-            return(
-
+            return( 
+              <>
+        <div className="row">
+                    <div className="col-sm-1">
+                    <img src={food.img} style={{width:"300px", height:"20vh"}}/>
+                    </div>
+                  </div>  
         
               <Food
                 value={foods.img}
                 onClick={() => {
                   setOpenFood(food);
                 }}
-              >
+              >{console.log(food.img)}
+              
                 <FoodLabel>
+                  
+                  
                   <div>{food.name}</div>
                   <div>{formatPrice(food.price)}</div>
                 </FoodLabel>
               </Food>
+              </>
             )}
             )}
           </FoodGrid>
