@@ -3,11 +3,13 @@ Finding Food Faster
 
 
 ## This is a react app built with love by  
-    [Miguel Villeags](https://github.com/MV-stack)
-    [Ticia Rodela](https://github.com/TiciaR)
-    [Hayden Muir](https://github.com/hayjmuir)
-    [Bobby Espinoza](https://github.com/bespinoza90)
-    
+* [Miguel Villegas](https://github.com/MV-stack)
+* [Ticia Rodela](https://github.com/TiciaR)
+* [Hayden Muir](https://github.com/hayjmuir)
+* [Bobby Espinoza](https://github.com/bespinoza90)
+
+
+
 ## This app utilizes 
   * JSX
   * CSS
