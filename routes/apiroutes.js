@@ -1,5 +1,6 @@
 var db = require("../models")
 var router =require("express").Router()
+var path = require("path")
 
     router.get("/api/restaurant", function (req, res) {
         db.Restaurant.find().then(function (results) {
@@ -32,6 +33,14 @@ var router =require("express").Router()
         console.log("this is the order", order)
         res.end()
     })
+
+
+    //Use when deployed or running from build
+    router.get("*", (req,res)=>{
+        
+    res.sendFile(path.join(__dirname, "../client/build/index.html"))
+   })
+
 
 
 

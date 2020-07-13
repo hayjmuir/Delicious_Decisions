@@ -26,7 +26,7 @@ const Wheel = () => {
     console.log(winner);
   }
   return (
-  <div className="text-center " style={{marginLeft:"20%"}}>
+  <div className="text-center " style={{marginLeft:"10%"}}>
     <WheelComponent
   style={{paddingTop:"10px",marginLeft:"50%", paddingLeft:"10px", paddingRight:"10px", paddingBottom:"10px"}}
   segments = {segments}

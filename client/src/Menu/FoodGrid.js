@@ -19,7 +19,8 @@ export const Food = styled.div`
  height: 100px; 
  padding: 10px; 
  font-size: 20px; 
- background-image: ${props => `url(${props.value})`};
+ 
+ background-color: black;
  background-position: center;
  background-size: cover;
  filter: contrast(75%); 
