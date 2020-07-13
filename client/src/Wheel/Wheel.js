@@ -25,8 +25,10 @@ const Wheel = () => {
   const onFinished = (winner) => {
     console.log(winner);
   }
-  return <WheelComponent
-  style={{paddingTop:"10px", paddingLeft:"10px", paddingRight:"10px", paddingBottom:"10px"}}
+  return (
+  <div className="text-center " style={{marginLeft:"20%"}}>
+    <WheelComponent
+  style={{paddingTop:"10px",marginLeft:"50%", paddingLeft:"10px", paddingRight:"10px", paddingBottom:"10px"}}
   segments = {segments}
   seg_colors = {seg_colors} 
   winning_segment ='won 10'
@@ -34,6 +36,8 @@ const Wheel = () => {
   primaryColor='black'
   contrastColor='white'
   buttonText='Spin'/>
+  </div>)
+  
 }
 
 export default Wheel;
