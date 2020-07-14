@@ -9,7 +9,8 @@ app.use(express.json())
 app.use(routes)
 
 
-mongoose.connect(process.env.MONGODB_URI||"mongodb://localhost/restauarnts")
+mongoose.connect(process.env.MONGODB_URI||"mongodb://localhost/restaurants")
 app.listen(PORT, function(){
     console.log("app is listening on port" + PORT)
 })
+mongoose.connect(MONGODB_URI);
