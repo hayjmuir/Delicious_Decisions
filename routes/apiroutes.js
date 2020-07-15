@@ -10,11 +10,11 @@ var path = require("path")
 
     })
 
-    router.post("/api/restaurant", function (req, res) {
-        db.Restaurant.create(req.body).then(function (results) {
-            res.json(results)
-        })
-    })
+    // router.post("/api/restaurant", function (req, res) {
+    //     db.Restaurant.create(req.body).then(function (results) {
+    //         res.json(results)
+    //     })
+    // })
 
     // router.put("/api/restaurant/:id", function (req, res) {
     //     db.Restaurant.update({ _id: req.params.id }).then(function (results) {
