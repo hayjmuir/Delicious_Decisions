@@ -28,14 +28,14 @@ var path = require("path")
 
     // })
 
-    router.post("/api/order", function (req, res) {
-        var order=req.body
-        console.log("this is the order", order)
-        res.end()
-    })
+    // router.post("/api/order", function (req, res) {
+    //     var order=req.body
+    //     console.log("this is the order", order)
+    //     res.end()
+    // })
 
 
-    //Use when deployed or running from build
+    
     router.get("*", (req,res)=>{
         
     res.sendFile(path.join(__dirname, "../client/build/index.html"))
