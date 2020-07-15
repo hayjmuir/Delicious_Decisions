@@ -16,17 +16,17 @@ var path = require("path")
         })
     })
 
-    router.put("/api/restaurant/:id", function (req, res) {
-        db.Restaurant.update({ _id: req.params.id }).then(function (results) {
-            res.json(results)
-        })
-    })
-    router.delete("/api/restaurant/:id", function (req, res) {
-        db.Restaurant.remove({ _id: req.params.id }).then(function (results) {
-            res.json(results)
-        })
+    // router.put("/api/restaurant/:id", function (req, res) {
+    //     db.Restaurant.update({ _id: req.params.id }).then(function (results) {
+    //         res.json(results)
+    //     })
+    // })
+    // router.delete("/api/restaurant/:id", function (req, res) {
+    //     db.Restaurant.remove({ _id: req.params.id }).then(function (results) {
+    //         res.json(results)
+    //     })
 
-    })
+    // })
 
     router.post("/api/order", function (req, res) {
         var order=req.body
