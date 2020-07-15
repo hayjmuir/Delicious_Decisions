@@ -2,13 +2,13 @@ var db = require("../models")
 var router =require("express").Router()
 var path = require("path")
 
-    router.get("/api/restaurant", function (req, res) {
-        db.Restaurant.find().then(function (results) {
-            res.json(results)
-        })
+    // router.get("/api/restaurant", function (req, res) {
+    //     db.Restaurant.find().then(function (results) {
+    //         res.json(results)
+    //     })
 
 
-    })
+    // })
 
     // router.post("/api/restaurant", function (req, res) {
     //     db.Restaurant.create(req.body).then(function (results) {
